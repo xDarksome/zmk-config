@@ -1,6 +1,5 @@
-&pro_micro_spi {
-    glidepoint@0 {
-        /delete-property/ no-taps;
-        sensitivity = "8x";
-    };
-};
+&{/soc/spi@40004000/glidepoint@0} {
+    /delete-property/ no-taps;
+    /delete-property/ sensitivity;
+    sensitivity = "4x";
+}
