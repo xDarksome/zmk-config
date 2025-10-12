@@ -92,9 +92,9 @@
 
         ngram {
             bindings = <
-&trans  &kp B  &kp Y  &kp O             &kp U                 &none            &none                        &kp L         &kp D               &kp W  &kp V  &trans
-&none   &kp C  &kp I  &kp E             &kp A                 &none            &none                        &kp H         &kp T               &kp S  &kp N  &none
-&trans  &kp G  &kp X  &kp J             &kp K                 &trans           &trans                       &kp R         &kp M               &kp F  &kp P  &trans
+&trans  &kp B  &kp Y  &kp O             &kp U                 &none            &mkp MCLK                        &kp L         &kp D               &kp W  &kp V  &trans
+&none   &kp C  &kp I  &kp E             &kp A                 &mkp LCLK        &mkp RCLK                        &kp H         &kp T               &kp S  &kp N  &none
+&trans  &kp G  &kp X  &kp J             &kp K                 &mkp MB4         &mkp MB5                         &kp R         &kp M               &kp F  &kp P  &trans
                       &mt LEFT_WIN TAB  &mt LEFT_SHIFT SPACE  &ltr 1 DELETE    &mtr LEFT_CONTROL BACKSPACE  &lt 2 ESCAPE  &mt LEFT_ALT ENTER
             >;
         };
