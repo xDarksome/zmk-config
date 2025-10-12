@@ -1,0 +1,4 @@
+&glidepoint {
+	/delete-property/ no-taps;
+	sensitivity = "8x";
+};
