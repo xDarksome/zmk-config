@@ -1,5 +1,0 @@
-&{/soc/spi@40004000/glidepoint@0} {
-    /delete-property/ no-taps;
-    /delete-property/ sensitivity;
-    sensitivity = "4x";
-}
