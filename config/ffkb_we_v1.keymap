@@ -131,6 +131,15 @@
 &pro_micro_spi {
     glidepoint@0 {
         /delete-property/ no-taps;
-        sensitivity = "8x";
+        sensitivity = "4x";
+    };
+};
+
+/ {
+    glidepoint_listener {
+        input-processors = <
+            &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+            &zip_xy_scaler 3 1
+        >;
     };
 };
